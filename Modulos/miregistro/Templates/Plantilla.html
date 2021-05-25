@@ -1,0 +1,22 @@
+<html lang="es">
+   <head>
+      <title>Mi registro</title>
+   </head>
+   <body>
+
+   {% for Cliente in Nombre %}
+           <li>{{ Cliente.idC }} - {{ Cliente.Nombre }}</li>
+
+   {% endfor %}
+
+   {% block content %}
+
+       {% for Pedido in Compra %}
+           <li>{{ Pedido.id }} - {{ Pedido.Precio }}</li>
+
+        {% endfor %}
+    {% endblock %}
+
+       <P>{{ name }}</P>
+   </body>
+</html>
